@@ -8,8 +8,8 @@
     "start": "npm run build",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
-    "build": "webpack -d && xcopy \"src/index.html\" \"dist/\" /F /Y && xcopy \"src/app/style/style.css\" \"dist/app/style/\" /F /Y && webpack-dev-server --content-base src/ --inline",
-    "build:prod": "webpack -p && xcopy \"src/index.html\" \"dist/\" /F /Y"
+    "build": "webpack -d && copy \"src/index.html\" \"dist/\" /F /Y && copy \"src/app/style/style.css\" \"dist/app/style/\" /F /Y && webpack-dev-server --content-base src/ --inline",
+    "build:prod": "webpack -p && copy \"src/index.html\" \"dist/\" /F /Y"
 
   },
   "author": "",
