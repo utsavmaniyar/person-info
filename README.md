@@ -21,3 +21,4 @@ Click [here](https://github.com/utsavmaniyar/person-info.git) then download the 
 	> npm install
 	> npm start
 ```
+Note: Server will start at [localhost:8080](localhost:8080).
